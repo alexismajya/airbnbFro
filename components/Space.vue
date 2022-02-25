@@ -49,7 +49,7 @@
               ></v-text-field>
             </v-col>
           </v-row>
-          <v-btn depressed color="primary">
+          <v-btn depressed color="primary" @click="saveSpace">
           Continue
         </v-btn>
         </v-container>
@@ -82,5 +82,17 @@ export default {
       region: 'Kigali, Rwanda',
     }
   },
+  methods: {
+    async saveSpace(){
+    try{
+      const res = await this.$axios.post('add/', {'description': 'Private room', 'guests': 10, 'region': 'Kigali/Rwanda' })
+      console.og(res)
+    }
+    catch(e){
+      console.log(e.message)
+    }
+
+  },
+  }
 }
 </script>
