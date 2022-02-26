@@ -22,25 +22,26 @@
 
         <v-container fluid>
           <v-row>
-            <v-col cols="12">
-              <v-combobox
-                v-model="select"
+            <v-col
+              cols="12"
+            >
+              <v-select
+                :placeholder="select"
                 :items="items"
-                multiple
                 outlined
                 dense
-              ></v-combobox>
+               ></v-select>
             </v-col>
-            <v-col cols="12">
-              <v-combobox
-                v-model="select2"
+            <v-col
+              cols="12"
+            >
+              <v-select
+                :placeholder="select2"
                 :items="guests"
-                multiple
                 outlined
                 dense
-              ></v-combobox>
+               ></v-select>
             </v-col>
-
             <v-col cols="12">
               <v-text-field
                 :placeholder="region"
@@ -49,9 +50,13 @@
               ></v-text-field>
             </v-col>
           </v-row>
-          <v-btn depressed color="primary" @click="saveSpace">
-          Continue
-        </v-btn>
+          
+          <NuxtLink to="/bed">
+            <v-btn depressed bg-color-blue @click="saveSpace()">
+              Continue
+            </v-btn>
+          </NuxtLink>
+        
         </v-container>
 
         <p class="mt-4 pt-4 text-gray-800 border-t border-dashed">
@@ -67,8 +72,8 @@ export default {
   name: 'Space',
   data () {
     return {
-      select: ['Private room'],
-      select2: ['for 10 guests'],
+      select: 'Private room',
+      select2: 'for 10 guests',
       items: [
         'Private room',
         'Shared room',
