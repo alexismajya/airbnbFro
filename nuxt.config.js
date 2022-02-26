@@ -34,7 +34,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -42,8 +43,13 @@ export default {
   },
 
   axios: {
-    baseURL: 'http://airbnb-apis.herokuapp.com/',
+    proxy: true, 
+    prefix: '/api/',
     // baseURL: 'http://127.0.0.1:8000/',
+  },
+  proxy: {
+    '/api/': { target: 'http://airbnb-apis.herokuapp.com/', pathRewrite: {'^/api/': ''}, changeOrigin: true },
+    // '/api/': { target: 'http://127.0.0.1:8000/', pathRewrite: {'^/api/': ''}, changeOrigin: true }
   }
     
 }

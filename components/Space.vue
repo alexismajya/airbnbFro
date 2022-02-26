@@ -86,7 +86,7 @@ export default {
     async saveSpace(){
     try{
       const res = await this.$axios.post('add/', {'description': 'Private room', 'guests': 10, 'region': 'Kigali/Rwanda' })
-      console.og(res)
+      console.log(res)
     }
     catch(e){
       console.log(e.message)
