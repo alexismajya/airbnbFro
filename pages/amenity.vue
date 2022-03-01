@@ -1,9 +1,9 @@
 <template>
-  <Location/>
+  <Amenity/>
 </template>
 
 <script>
 export default {
-  name: 'Region',
+  name: 'AmenityPage',
 }
 </script>
