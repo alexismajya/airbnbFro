@@ -1,0 +1,136 @@
+.underline {
+    height: 4px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.button {
+    background-color: rgba(3, 109, 86, 0.938);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    width: auto;
+    padding: 10px;
+    
+}
+.bigWidth{
+    width: 100px;
+}
+.nextbtn{
+    width: 80px;
+    float: right;
+}
+.backbtn{
+    width: auto;
+    background-color: white;
+    color: rgba(3, 109, 86, 0.938);
+}
+.exitbtn{
+    width: 80px;
+    background-color: white;
+    color: rgba(3, 109, 86, 0.938);
+    float: right;
+}
+.locbtn {
+    border-radius: 3px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    color: rgba(3, 109, 86, 0.938);
+    border-color:rgba(3, 109, 86, 0.938);
+    border-width:2px;
+    border-style: solid;
+}
+
+.circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: rgba(3, 109, 86, 0.938);
+    border-color:rgba(3, 109, 86, 0.938);
+    border-width: 1px;
+    border-style: solid;
+    
+}
+.amenityCir {
+    box-shadow: 2px 2px 2px 2px rgba(236, 236, 236, 0.925);
+    background-color: rgba(255, 255, 255, 0.918);
+    border-color:rgb(236, 236, 236);
+    width: 40px;
+    height: 40px;
+}
+.guest {
+    flex-flow: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.bar {
+    background-color: rgb(231, 225, 225);
+    height: 10px;
+    display: block;
+    border: 1px solid rgb(231, 225, 225);
+    overflow: hidden;
+    box-shadow: 0 0 10px,silver;
+}
+.barhtml {
+    height: 10px;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(3, 109, 86, 0.938);
+    
+}
+.c25 {
+    width: 25%;
+    animation: c25 2s;
+}
+.c50 {
+    width: 50%;
+    animation: c50 2s;
+}
+.c75 {
+    width: 75%;
+    animation: c75 2s;
+}
+@keyframes c25{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+@keyframes c50{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+@keyframes c75{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.body {
+    height: 100vh;
+}
+.bodyBg {
+    background-color:aliceblue;
+}
+.footer {
+    position:sticky;
+    top: 100%;
+    box-shadow: 0px -5px 6px,black;
+    -moz-box-shadow: 0px -5px 6px,black;
+}
+.header {
+    position: sticky;
+    bottom: 100%;
+}

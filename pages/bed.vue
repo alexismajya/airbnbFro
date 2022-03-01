@@ -1,9 +1,15 @@
 <template>
-  <Bed/>
+  <div>
+    <Bed/>
+  </div>
 </template>
 
 <script>
+import Bed from '../components/Bed'
 export default {
-  name: 'BedPage'
+  components: {
+    Bed
+  },
+  name: 'BedPage',
 }
 </script>
