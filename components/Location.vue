@@ -32,17 +32,17 @@
                     </v-col>
                   </v-row>
                   <v-row>
-                    <v-col cols="4">
+                    <v-col cols="3">
                       <div class="mt-1">
-                        <p class="mt-4 text-gray-800 border-t"></p>
+                        <p class="mt-4 text-gray-600 border-t"></p>
                       </div>
                     </v-col>
-                     <v-col cols="4">
+                     <v-col cols="6">
                       <div class="mt-1">
                         <p class="text-gray-400 text-semibold">or enter your address</p>
                       </div>
                     </v-col>
-                    <v-col cols="4">
+                    <v-col cols="3">
                       <div class="mt-1">
                         <p class="mt-4 text-gray-800 border-t"></p>
                       </div>

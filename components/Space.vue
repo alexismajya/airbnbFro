@@ -1,17 +1,17 @@
 <template>
   <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-    <div class="max-w-4xl max-h-6xl mx-auto sm:px-6 lg:px-8 text-xl">
+    <div class="max-w-4xl  mx-auto sm:px-6 lg:px-8 text-xl">
       <Header/>
-      <div class=" bg-white overflow-hidden shadow p-6 ">
-        <h1 class="text-xl leading-7 font-semibold">
+      <div class=" bg-white overflow-hidden shadow p-6 maxH ">
+        <h1 class="text-2xl font-semibold">
           Let's get started listing your space.
         </h1>
 
-         <h2 class="mt-3 text-gray-600">
+         <h3 class="mt-3 text-gray-400">
           STEP 1
-        </h2>
-         <h2 class="text-2xl leading-7 font-semibold">
+        </h3>
+         <h2 class="text-2xl  font-semibold">
           What king of place do you have?
         </h2>
         <p class="mt-3 text-gray-600">
@@ -54,20 +54,21 @@
           </NuxtLink>
         
         </v-container>
-
-        <p class="mt-4 pt-4 text-gray-800 border-t">
-        </p>
-        <v-row cols="12">
-           <v-col> 
-            <div class="underline"></div>
-           </v-col>
-           <v-col> 
-            <div class="underline"></div>
-           </v-col>
-           <v-col> 
-            <div class="underline"></div>
-           </v-col>
-        </v-row>
+        <div class="bg-white overflow-hidden shadow footer">
+          <p class="mt-4 pt-4 text-gray-800 border-t">
+          </p>
+          <v-row cols="12">
+            <v-col> 
+              <div class="underline"></div>
+            </v-col>
+            <v-col> 
+              <div class="underline"></div>
+            </v-col>
+            <v-col> 
+              <div class="underline"></div>
+            </v-col>
+          </v-row>
+        </div>
       </div>
     </div>
   </div>

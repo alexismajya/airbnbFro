@@ -32,6 +32,9 @@
     color: rgba(3, 109, 86, 0.938);
     float: right;
 }
+.maxH {
+    min-height: 720px;
+}
 .locbtn {
     border-radius: 3px;
     width: 100%;
